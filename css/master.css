@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root{
+    --background-blue: linear-gradient(180deg, #679CF6 0%, #4072EE 100%);
+    --box-shadow: 0px 5px 15px #ACB2C1;
+    --gray-color:#B8C5D3;
+    --white-color:#fff;
+    --green-color:#29CB97;
+    --blue-color:#4072EE;
+    --purple-color:#B558F6;
+    --yellow-color:#FEC400;
+    --light-slate-grey:#748AA1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+body{font-family: 'Roboto', sans-serif;}
+
+/* Start Left-menu */
+.left-menu{
+    width: 81px;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+@media (max-width:767px) {
+    .left-menu{
+        width: 47px;
+    }
+    
+}
+.left-menu .img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -4px;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+}
+
+
+.left-menu .middle{
+    cursor: pointer;
+}
+.left-menu .middle i{   
+    transition: 0.3s;
+    padding: 10px 20px  ;
+
+}
+
+.left-menu .middle i:hover{
+    border-radius: 6px;
+    background:var(--background-blue);
+    box-shadow: var(--box-shadow);
+
+}
+.left-menu .plus img{
+    transition: 0.3s;
+}
+.left-menu .plus img:hover{
+    transform:scale(1.1);
+}
+
+
+
+/* End Left-menu */
+/* Start  Middle_Section */
+
+.middle_section{
+    width: 900px;
+    background-color: #F5F6FA;
+}
+
+
+.middle_section .text i::before{
+    content: "\f2d9";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    
+}
+@media (max-width:819px) {
+    .middle_section .text{
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+
+.middle_section .text i::after{
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background: var(--background-blue);
+    transition: 0.3s;
+}
+.middle_section .text i:hover::after{
+    width: 100%;
+} 
+
+.middle_section .holder{
+    margin-top: 20px;
+}
+
+
+.middle_section .person .sta span{
+    top: 0;
+    left: 0;
+}
+
+.holder .right .progr .sta{
+    height: 18px;
+    position: relative;
+    
+    
+}
+.holder .right .progr .sta span{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+
+    
+}
+.holder .right .progr .sta span::before{
+    content: attr(data-progress);
+    position: absolute;
+    top: 0;
+    right: -37px;
+    padding:px;
+    
+}
+
+.cricle_text .box i{
+    width: 20px;
+    height: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+}
+/* End  Middle_Section */
+/* End  Middle_Section */
+/* Start   Right_Section */
+.right_section{
+    width: 368px;
+}
+@media (max-width:991px) {
+    .right_section{
+        width: 287px;
+    }
+}
+@media (max-width:713px) {
+    .right_section{
+        width: 190px;
+    }
+}
+.right_section + h3{
+    font-weight: 400;
+}
+.right_section .my-card{
+    width: 370px;
+    height: 199px;
+    position: relative;
+    left: -35px;
+    padding: 30px;
+}
+@media (max-width:991px) {
+    .right_section .my-card{
+        display: none;
+
+    }
+}
+.right_section .cle-pop{
+    position: relative;
+    text-align: end;
+    cursor: pointer;
+}
+.right_section .fa-calendar{
+    font-size: 20px;
+    color: var(--blue-color);
+    
+}
+.right_section .time{
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 100%;
+    border-radius: 6px;
+    display: none;
+    grid-template-columns: repeat(auto-fill,minmax(37px,1fr));
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    background-color: black;
+    padding: 15px;
+
+
+}
+
+@media (max-width:819px) {
+    .right_section .cle-pop{text-align: center;}
+    .right_section .time{
+        width: 300px;
+    }
+    
+}
+@media (min-width:819px) {
+
+    .right_section .time{
+        width: 300px;
+    }
+    
+}
+.right_section .fa-calendar:hover > .time{
+    display: grid;
+    z-index: 1;
+}
+
+.right_section .time a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+.right_section .cont .fa{
+    font-size: 20px;
+}
+/* End   RIght_Section */

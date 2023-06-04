@@ -1,0 +1,273 @@
+:root{
+    --background-blue: linear-gradient(180deg, #679CF6 0%, #4072EE 100%);
+    --box-shadow: 0px 5px 15px #ACB2C1;
+    --gray-color:#B8C5D3;
+    --white-color:#fff;
+    --green-color:#29CB97;
+    --blue-color:#4072EE;
+    --purple-color:#B558F6;
+    --yellow-color:#FEC400;
+    --light-slate-grey:#748AA1;
+    --dark_desaturated_blue:#31394D;
+    --c-day-done:#F4F7FC;
+}
+a{text-decoration: none;}
+/* Start Box */
+.d-flex{
+    display: flex;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.f-direction-c{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.d-grid{
+    display: grid;
+}
+.gap-20{
+    gap: 20px;
+}
+.gap-25{
+    gap: 25px;
+}
+/* End Box */
+/* Start Padding + Margin */
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+@media (max-width:819px) {
+    .p-30{
+        padding: 15px;
+    }
+}
+.pt-50px{
+    padding-top: 50px;
+}
+.pr-15{
+    padding-right: 15px;
+}
+.mt-3{
+    margin-top: 3px;
+}
+.mt-14{
+    margin-top: 14px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-3{
+    margin-bottom: 3px;
+}
+
+/* End Padding + Margin */
+
+/* Start Color */
+.c-gray{
+    color: var(--gray-color);
+}
+.c-white{
+    color: var(--white-color);
+}
+.bg-c-white{
+    background-color: var(--white-color);
+}
+.c-green{
+    color: var(--green-color);
+}
+.c-blue{
+    color: var(--blue-color);
+}
+.c-purple{
+    color: var(--purple-color);
+}
+.c-yellow{
+    color: var(--yellow-color);
+}
+.cb-green{
+    border-color: var(--green-color);
+}
+.cb-blue{
+    border-color: var(--blue-color);
+}
+.cb-purple{
+    border-color: var(--purple-color);
+}
+.cb-yellow{
+    border-color: var(--yellow-color);
+}
+.c-light-gray{
+    color: var(--light-slate-grey);
+}
+.c-dark-blue{
+    color: var(--dark_desaturated_blue);
+}
+.bg-blue{
+    background-color: var(--blue-color);
+}
+.bg-green{
+    background-color: var(--green-color);
+}
+.bg-purple{
+    background-color: var(--purple-color);
+}
+.bg-yellow{
+    background-color: var(--yellow-color);
+}
+.bg-none{
+    background-color: transparent;
+}
+.bg-prog{
+    background-color: #E5E9F2;
+}
+.bg-done-d{
+    background-color: var(--c-day-done);
+}
+.box-sh{
+    box-shadow: var(--box-shadow);
+}
+/* End Color */
+/* Start Position */
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+/* End Position */
+/* Start Width + Height */
+.w-100{
+    width:100%;
+}
+.h-100{
+    height:100%;
+}
+/* End Width + Height */
+/* Start Font */
+.text-ali-c{
+    text-align: center;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-700{
+    font-weight: 700;
+}
+/* End Font */
+/* Start Border */
+.rad-6{
+    border-radius: 6px;
+}
+.rad-half{
+    border-radius: 50%;
+}
+/* End Border */
+/* Start Cursore*/
+.curser-p{
+    cursor: pointer;
+}
+/* End Cursore*/
+
+/* Start Components */
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-g-t-g{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+}
+
+.button-nav{
+    padding: 20px;
+    background:var(--background-blue);
+    box-shadow: var(--box-shadow);
+}
+@media (max-width:767px) {
+    .button-nav{
+        width: 60px;
+    }
+}
+
+.box h4::before{
+    content: "";
+    height: 5px;
+    position: absolute;
+    bottom:-5px;
+    right: 0;
+    border: 5px solid transparent;
+    border-top-color: var(--gray-color);
+}
+.sta{
+    height: 6px;
+    overflow: hidden;
+    margin-top: 17px;
+    margin-bottom: 10px;
+
+}
+  /* End Components */
+
+/*Start Font Media */
+@media (max-width:819px) {
+    .fs-14{
+        font-size: 12px;
+    }
+    .fs-20{
+        font-size: 15px;
+    }
+    .fs-36{
+        font-size: 16px;
+    }
+    .mn{
+        display: none;
+    }
+    .between-flex {
+        flex-direction:column;
+    }
+}
+/*End Font Media */
